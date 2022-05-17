@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tests">
+    <test name="Test">
+         <classes>
+             <class name="FirstTest"> 
+				<methods>
+					<include name="RegisterNewAccountAllMandatoryFields"></include> 
+					<include name="DoNotFillMandatoryFields"></include> 
+					<include name="EnterExistingData"></include> 
+				</methods>
+			</class>
+			<class name="SecontTest"> 
+				<methods>
+					<include name="LogInFillAllMandatoryFields"></include> 
+					<include name="DoNotFillAllMandatoryFields"></include> 
+					<include name="NotCorrectLogInData"></include> 
+				</methods>
+			</class>
+			<class name="ThirdTest"> 
+				<methods>
+					<include name="LogOut"></include> 
+				</methods>
+			</class>
+          </classes>
+     </test> 
+</suite> 
+
+
